@@ -1,0 +1,7 @@
+print("Input the percentage of your tip")
+tippercent = float(input())
+print("Input the cost of your meal")
+cost = float(input())
+tipamount = cost * (tippercent / 100)
+print("You should tip")
+print(tipamount)

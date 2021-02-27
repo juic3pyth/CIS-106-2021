@@ -1,0 +1,16 @@
+Function Main
+    Declare String LastName
+    Declare Integer Score1
+    Declare Integer Score2
+    Declare Integer averageofscores
+    
+    Output "Input Last Name"
+    Input LastName
+    Output "Input first test score"
+    Input Score1
+    Output "Input second test score"
+    Input Score2
+    Assign averageofscores = (Score2+Score1)/2
+    Output "Your average score is"
+    Output averageofscores
+End

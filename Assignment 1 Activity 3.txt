@@ -1,0 +1,13 @@
+Function Main
+    Declare Real Miles
+    Declare Real Gallons
+    Declare Real MPG
+    
+    Output "Input how many miles you drove"
+    Input Gallons
+    Output "Input gallons of fuel used"
+    Input Miles
+    Assign MPG = Gallons/Miles
+    Output "Your Miles Per Gallons is"
+    Output MPG
+End
