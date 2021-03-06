@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jerom"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-05 12:39:05 AM"/>
+        <attribute name="created" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTA0OzAyOjA0OjI4IFBNOzI3Mjk="/>
+        <attribute name="edited" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTA1OzEyOjM5OjA1IEFNOzI7MjgyOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="stockquan" type="Integer" array="False" size=""/>
+            <declare name="stockpricecur" type="Real" array="False" size=""/>
+            <declare name="portfolioval" type="Real" array="False" size=""/>
+            <output expression="&quot;Input the amount of a stock you own&quot;" newline="True"/>
+            <input variable="stockquan"/>
+            <output expression="&quot;Input the current price of the stock&quot;" newline="True"/>
+            <input variable="stockpricecur"/>
+            <assign variable="portfolioval" expression="stockquan*stockpricecur"/>
+            <output expression="&quot;The value of the stock in your portfolio is&quot;" newline="True"/>
+            <output expression="portfolioval" newline="True"/>
+            <output expression="&quot;Dollars&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

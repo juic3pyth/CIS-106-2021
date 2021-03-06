@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jerom"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-04 04:16:45 PM"/>
+        <attribute name="created" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTA0OzA0OjA0OjQ1IFBNOzI3MzA="/>
+        <attribute name="edited" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTA0OzA0OjE2OjQ1IFBNOzE7Mjg0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="itemprice" type="Real" array="False" size=""/>
+            <declare name="discountper" type="Real" array="False" size=""/>
+            <declare name="costwdis" type="Real" array="False" size=""/>
+            <output expression="&quot;Input the cost of the item&quot;" newline="True"/>
+            <input variable="itemprice"/>
+            <output expression="&quot;Input the percentage the discount&quot;" newline="True"/>
+            <input variable="discountper"/>
+            <assign variable="costwdis" expression="itemprice-(itemprice*(.01*discountper))"/>
+            <output expression="&quot;The cost of the item with the discount is&quot;" newline="True"/>
+            <output expression="costwdis" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

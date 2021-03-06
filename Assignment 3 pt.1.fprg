@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jerom"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-06 01:12:44 PM"/>
+        <attribute name="created" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTA2OzAxOjA3OjU3IFBNOzI3MzU="/>
+        <attribute name="edited" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTA2OzAxOjEyOjQ0IFBNOzE7MjgzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="totalscore" type="Real" array="False" size=""/>
+            <declare name="weight1" type="Real" array="False" size=""/>
+            <declare name="weight2" type="Real" array="False" size=""/>
+            <assign variable="weight1" expression="0.4"/>
+            <assign variable="weight2" expression="0.6"/>
+            <declare name="score1" type="Real" array="False" size=""/>
+            <declare name="score2" type="Real" array="False" size=""/>
+            <output expression="&quot;Input you first score&quot;" newline="True"/>
+            <input variable="score1"/>
+            <output expression="&quot;input your second score&quot;" newline="True"/>
+            <input variable="score2"/>
+            <assign variable="totalscore" expression="(score1*weight1)+(score2*weight2)"/>
+            <output expression="&quot;Your total weighted score is&quot;" newline="True"/>
+            <output expression="totalscore" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
