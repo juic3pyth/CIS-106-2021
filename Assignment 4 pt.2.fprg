@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jerom"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-12 12:06:59 AM"/>
+        <attribute name="created" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTExOzA1OjQ0OjM2IFBNOzI3MzM="/>
+        <attribute name="edited" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTEyOzEyOjA2OjU5IEFNOzM7MjgzMA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="item" type="String" array="False" size=""/>
+            <declare name="itemquan" type="Integer" array="False" size=""/>
+            <declare name="unitprice" type="Integer" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <declare name="extendedprice" type="Real" array="False" size=""/>
+            <output expression="&quot;Input which item you want&quot;" newline="True"/>
+            <input variable="item"/>
+            <output expression="&quot;input how many of that item you want&quot;" newline="True"/>
+            <input variable="itemquan"/>
+            <if expression="item=&quot;A&quot;">
+                <then>
+                    <assign variable="unitprice" expression="10"/>
+                </then>
+                <else>
+                    <assign variable="unitprice" expression="20"/>
+                </else>
+            </if>
+            <assign variable="tax" expression="unitprice*itemquan"/>
+            <assign variable="extendedprice" expression="itemquan*unitprice"/>
+            <output expression="&quot;Extended Price is&quot;" newline="True"/>
+            <output expression="extendedprice" newline="True"/>
+            <output expression="&quot;item chosen&quot;" newline="True"/>
+            <output expression="item" newline="True"/>
+            <output expression="" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

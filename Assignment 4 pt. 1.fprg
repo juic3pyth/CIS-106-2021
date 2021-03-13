@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jerom"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-11 05:40:34 PM"/>
+        <attribute name="created" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTExOzA0OjU5OjQwIFBNOzI3MzM="/>
+        <attribute name="edited" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTExOzA1OjQwOjM0IFBNOzE7MjgzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="itemquan" type="Integer" array="False" size=""/>
+            <declare name="itemprice" type="Real" array="False" size=""/>
+            <declare name="extendedprice" type="Real" array="False" size=""/>
+            <declare name="unitprice" type="Real" array="False" size=""/>
+            <declare name="tax" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;Input the quantity of items&quot;" newline="True"/>
+            <input variable="itemquan"/>
+            <if expression="itemquan&gt;=1000">
+                <then>
+                    <assign variable="itemprice" expression="5"/>
+                </then>
+                <else>
+                    <assign variable="itemprice" expression="3"/>
+                </else>
+            </if>
+            <assign variable="extendedprice" expression="itemquan*itemprice"/>
+            <assign variable="tax" expression="extendedprice*0.07"/>
+            <assign variable="total" expression="extendedprice+tax"/>
+            <assign variable="unitprice" expression="total/itemquan"/>
+            <output expression="&quot;The Quantity is&quot;" newline="True"/>
+            <output expression="itemquan" newline="True"/>
+            <output expression="&quot;The extended price is&quot;" newline="True"/>
+            <output expression="extendedprice" newline="True"/>
+            <output expression="&quot;The tax is&quot;" newline="True"/>
+            <output expression="tax" newline="True"/>
+            <output expression="&quot;The total cost is&quot;" newline="True"/>
+            <output expression="total" newline="True"/>
+            <output expression="&quot;The Price per unit is&quot;" newline="True"/>
+            <output expression="unitprice" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

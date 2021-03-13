@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jerom"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-12 02:59:57 PM"/>
+        <attribute name="created" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTEyOzAyOjE5OjA1IFBNOzI3Mjk="/>
+        <attribute name="edited" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTEyOzAyOjU5OjU3IFBNOzE7Mjg0OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price" type="Real" array="False" size=""/>
+            <declare name="numofbook" type="Integer" array="False" size=""/>
+            <declare name="shipping" type="Real" array="False" size=""/>
+            <declare name="ordertotal" type="Integer" array="False" size=""/>
+            <output expression="&quot;input the price of a single book&quot;" newline="True"/>
+            <input variable="price"/>
+            <output expression="&quot;input the number of books&quot;" newline="True"/>
+            <input variable="numofbook"/>
+            <assign variable="ordertotal" expression="numofbook*price"/>
+            <if expression="ordertotal&lt;=50">
+                <then>
+                    <assign variable="shipping" expression="0"/>
+                </then>
+                <else>
+                    <assign variable="shipping" expression="25"/>
+                </else>
+            </if>
+            <output expression="&quot;The total cost of the order with shipping is&quot;" newline="True"/>
+            <output expression="ordertotal+shipping" newline="True"/>
+            <output expression="&quot;the cost of the order without shipping is&quot;" newline="True"/>
+            <output expression="ordertotal" newline="True"/>
+            <output expression="&quot;the cost of shipping is&quot;" newline="True"/>
+            <output expression="shipping" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

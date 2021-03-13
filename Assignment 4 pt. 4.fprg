@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="jerom"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-03-12 08:33:57 PM"/>
+        <attribute name="created" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTEyOzA2OjA5OjE0IFBNOzI3MzI="/>
+        <attribute name="edited" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTEyOzA2OjA5OjE2IFBNOzE7amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTEyOzAzOjAwOjAwIFBNO0Fzc2lnbm1lbnQgNCBwdC40LmZwcmc7NzY0Mw=="/>
+        <attribute name="edited" value="amVyb207VEhFLUpVSUNFLUJPWDsyMDIxLTAzLTEyOzA4OjMzOjU3IFBNOzE7Mjg0Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="lastname" type="String" array="False" size=""/>
+            <declare name="income" type="Real" array="False" size=""/>
+            <declare name="taxrate" type="Real" array="False" size=""/>
+            <declare name="adgi" type="Real" array="False" size=""/>
+            <output expression="&quot;input your income&quot;" newline="True"/>
+            <input variable="cost"/>
+            <output expression="&quot;input the name of the appliance&quot;" newline="True"/>
+            <input variable="appliancename"/>
+            <if expression="cost&gt;=1000">
+                <then>
+                    <assign variable="taxrate" expression="taxrate"/>
+                </then>
+                <else>
+                    <assign variable="taxrate" expression="0.05*cost"/>
+                </else>
+            </if>
+            <assign variable="totalcost" expression="warrantee+cost"/>
+            <output expression="&quot;The total cost of the&quot;" newline="True"/>
+            <output expression="appliancename" newline="True"/>
+            <output expression="totalcost" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
